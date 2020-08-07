@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web | Home</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get a country deatails!</p>
+
+        <form>
+            <input placeholder="location">
+            <button>Search</button>
+            <p id="name"></p>
+            <p id="capital"></p>
+            <p id="region"></p>
+            <p id="sub-region"></p>
+            <p id="population"></p>
+            <p id="timezones"></p>
+            <p id="borders"></p>
+            <p id="flag-label"></p>
+            <div id="flag"></div>
+        </form>
+    </div>
+    {{>footer}}
+
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
